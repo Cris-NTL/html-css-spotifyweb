@@ -7,8 +7,52 @@
 img {
     max-width: 100%;
 }
+/* /reset */
+
+/* utility */
+
+/* /utility */
 
 /* common rules */
 body {
     font-family: 'Montserrat', sans-serif;
 }
+#bottom-navigation {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    /* debug */
+    background-color: limegreen;
+    opacity: 30%;
+    /* /debug */
+}
+/* /common rules */
+
+/* specific rules */
+aside {
+    width: 230px;
+    height: 90vh;
+    position: fixed;
+    /* debug */
+    background-color: black;
+    /* /debug */                
+}
+header {
+    width: calc(100% - 230px);
+    height: 10vh;
+    position: fixed;
+    left: 230px;
+    /* debug */
+    background-color: blue;
+    /* /debug */
+}
+#content {
+    width: calc(100% - 230px);
+    height: 100vh;
+    position: absolute;
+    left: 230px;
+    top: 90px;
+}
+/* /specific rules */
+
