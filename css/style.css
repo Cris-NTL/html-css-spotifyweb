@@ -10,7 +10,12 @@ img {
 /* /reset */
 
 /* utility */
-
+:root {
+    --default: #ffffff;
+    --header: #080B12;
+    --sidebar: #000000;
+    --side-text: #717171;
+}
 /* /utility */
 
 /* common rules */
@@ -33,19 +38,40 @@ body {
 aside {
     width: 230px;
     height: 90vh;
+    padding: 1rem 1rem;
     position: fixed;
+    background-color: var(--sidebar);
+}
+aside nav {
+    width: 100%;
     /* debug */
-    background-color: black;
-    /* /debug */                
+    height: 100%;
+    /* /debug */
+}
+aside nav div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+aside nav div:not(:first-child) {
+    color: var(--side-text);
 }
 header {
     width: calc(100% - 230px);
     height: 10vh;
+    padding: 2rem;
     position: fixed;
     left: 230px;
-    /* debug */
-    background-color: blue;
-    /* /debug */
+    background-color: var(--header);
+    opacity: 90%;
+    text-align: end;
+}
+header a {
+    color: var(--default);
+    border: 1px solid var(--default);
+    padding: 0.8rem 2rem;    
+    border-radius: 25px 25px;
+    list-style-type: none;
 }
 #content {
     width: calc(100% - 230px);
