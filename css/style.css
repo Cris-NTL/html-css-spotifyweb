@@ -19,6 +19,7 @@ img {
     --grey: #909090;
     --content: #141922;
     --nav-cont: #7D7F84;
+    --bar: #d0d8e6;
 }
 /* /utility */
 
@@ -26,16 +27,26 @@ img {
 body {
     font-family: 'Montserrat', sans-serif;
 }
+#content {
+    padding: 1rem 0 10rem 1rem;
+    width: calc(100% - 230px);
+    position: absolute;
+    left: 228px;
+    top: 90px;
+    background-color: var(--content);
+}
 #bottom-navigation {
     background-color: var(--bottom-navigation);
     width: 100%;
     height: 90px;
+    padding: 1rem;
     position: fixed;
     bottom: 0;
 }
 /* /common rules */
 
 /* specific rules */
+/* left sidebar */
 aside {
     width: 230px;
     height: 91vh;
@@ -95,6 +106,8 @@ aside .user span i {
 aside .user i {
     display: none;
 }
+/* /left sidebar */
+/* header */
 header {
     width: calc(100% - 230px);
     height: 91px;
@@ -113,14 +126,8 @@ header a {
     border-radius: 25px 25px;
     list-style-type: none;
 }
-#content {
-    padding: 1rem 0 10rem 1rem;
-    width: calc(100% - 230px);
-    position: absolute;
-    left: 228px;
-    top: 90px;
-    background-color: var(--content);
-}
+/* /header */
+/* main content */
 #content nav {
     display: flex;
     justify-content: center;
@@ -152,4 +159,55 @@ header a {
 #content .popular img {
     border-radius: 50%;
 }
+/* /main content */
+/* bottom navigation bar */
+#bottom-navigation .navigator {
+    height: 100%;
+    gap: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+#bottom-navigation .card {
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--nav-cont);
+}
+#bottom-navigation .central {
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--default);
+}
+#bottom-navigation .time-bar {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+}
+#bottom-navigation .tools {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+#bottom-navigation .progress-bar {
+    height: 8px;
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--bar);
+    border-radius: 10px;
+}
+#bottom-navigation .progress-current {
+    height: inherit;
+    width: 25%;
+    background-color: #4a5363;
+    border-radius: 10px;
+}
+#bottom-navigation img {
+    height: 100%;
+}
+#bottom-navigation h6 {
+    color: var(--default);
+}
+/* bottom navigation bar */
 /* /specific rules */
