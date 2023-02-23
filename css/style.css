@@ -15,6 +15,10 @@ img {
     --header: #080B12;
     --sidebar: #000000;
     --side-text: #717171;
+    --bottom-navigation :#282828;
+    --grey: #909090;
+    --content: #141922;
+    --nav-cont: #7D7F84;
 }
 /* /utility */
 
@@ -23,27 +27,27 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 #bottom-navigation {
+    background-color: var(--bottom-navigation);
     width: 100%;
-    height: 10vh;
+    height: 90px;
     position: fixed;
     bottom: 0;
-    /* debug */
-    background-color: limegreen;
-    opacity: 30%;
-    /* /debug */
 }
 /* /common rules */
 
 /* specific rules */
 aside {
     width: 230px;
-    height: 90vh;
+    height: 91vh;
     padding: 1rem 1rem;
     position: fixed;
     background-color: var(--sidebar);
 }
 aside nav {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /* debug */
     height: 100%;
     /* /debug */
@@ -51,20 +55,56 @@ aside nav {
 aside nav div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
 }
 aside nav div:not(:first-child) {
     color: var(--side-text);
+    font-size: 1.3rem;
+}
+aside .logo img.large {
+    width: 75%;
+}
+aside .logo img.small {
+    display: none;
+}
+aside .options *, .playlist * {
+    margin-bottom: 0.5rem;
+}
+aside .options span i {
+    display: inline-block;
+}
+aside .options i {
+    display: none;
+}
+aside .playlist i {
+    background-color: var(--grey);
+    color: var(--sidebar);
+    padding: 0.2rem;
+}
+aside .user *:not(:last-child) {
+    margin-bottom: 0.7rem;
+}
+aside .user span:not(:first-child) i {
+    background-color: var(--grey);
+    color: var(--default);
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+aside .user span i {
+    display: inline-block;
+}
+aside .user i {
+    display: none;
 }
 header {
     width: calc(100% - 230px);
-    height: 10vh;
+    height: 91px;
     padding: 2rem;
     position: fixed;
-    left: 230px;
+    left: 229px;
     background-color: var(--header);
     opacity: 90%;
     text-align: end;
+    z-index: 1;
 }
 header a {
     color: var(--default);
@@ -74,11 +114,42 @@ header a {
     list-style-type: none;
 }
 #content {
+    padding: 1rem 0 10rem 1rem;
     width: calc(100% - 230px);
-    height: 100vh;
     position: absolute;
-    left: 230px;
+    left: 228px;
     top: 90px;
+    background-color: var(--content);
+}
+#content nav {
+    display: flex;
+    justify-content: center;
+    color: var(--nav-cont);
+    gap: 3rem;
+}
+#content h1 {
+    padding: 2rem 0rem;
+    color: var(--default);
+}
+#content .row {
+    display: flex;
+    column-gap: 1rem;
+}
+#content .card {
+    width: calc(100% / 6 - 1rem);
+    text-align: center;
+}
+#content h4 {
+    color: var(--default);
+    margin: 0.5rem 0;
+}
+#content span {
+    color: var(--nav-cont);
+}
+#content .created .row {
+    margin-top: 2rem;
+}
+#content .popular img {
+    border-radius: 50%;
 }
 /* /specific rules */
-

@@ -1,4 +1,46 @@
 /* <= 600px */
 @media screen and (max-width: 600px) {
-    
+    #bottom-navigation {
+        height: 100px;
+    }
+    aside {
+        width: 70px;
+        text-align: center;
+    }
+    aside .logo img.large {
+        display: none;
+    }
+    aside .logo img.small {
+        display: block;
+    }
+    aside .options span {
+        display: none;
+    }
+    aside .options i {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    aside .playlist {
+        display: none;
+    }
+    aside .user span {
+        display: none;
+    }
+    aside .user i {
+        display: inline-block;
+    }
+    aside .user hr {
+        display: none;
+    }
+    header {
+        width: calc(100% - 70px);
+        left: 69px;
+    }
+    #content {
+        width: calc(100% - 70px);
+        left: 69px;
+    }
+    #content nav * {
+        width: calc(100% / 4 - 1rem);
+    }
 }

@@ -28,12 +28,16 @@
             <aside>
                 <nav>
                     <div class="logo">
-                        <img src="img/logo.svg" alt="large-logo">
+                        <img class="large" src="img/logo.svg" alt="large-logo">
+                        <img class="small" src="img/logo-small.svg" alt="small-logo">
                     </div>
                     <div class="options">
                         <span><i class="fa-solid fa-house"></i> Home</span>
+                        <i class="fa-solid fa-house"></i>
                         <span><i class="fa-solid fa-magnifying-glass"></i> Cerca</span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                         <span><i class="fa-solid fa-folder"></i> La tua libreria</span>
+                        <i class="fa-solid fa-folder"></i>
                     </div>
                     <div class="playlist">
                         <span>Playlist</span>
@@ -47,9 +51,11 @@
                         <span>Nome Playlist</span>
                     </div>
                     <div class="user">
-                        <span><i class="fa-solid fa-down"></i> Installa app</span>
+                        <span><i class="fa-sharp fa-regular fa-circle-down"></i> Installa app</span>
+                        <i class="fa-sharp fa-regular fa-circle-down"></i>
                         <hr>
                         <span><i class="fa-regular fa-user"></i> John Doe</span>
+                        <i class="fa-regular fa-user"></i>
                     </div>
                 </nav>
             </aside>
@@ -63,7 +69,88 @@
 
             <!-- main content -->
             <section id="content">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus repudiandae alias libero vitae aliquam tempora amet commodi, veritatis expedita nostrum ullam. Aliquid reiciendis culpa eligendi repellendus et architecto deleniti dicta.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquam corporis reprehenderit velit est dolorem sit id itaque sint non et sunt, beatae eum quibusdam adipisci ipsa! Illum, deserunt ullam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum autem quas commodi. Et amet, deserunt dolorem similique repudiandae sequi. Molestiae deleniti aliquid maiores delectus provident maxime, cum ad voluptatem? Laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto non saepe labore sapiente corrupti omnis nostrum tempore maiores quae voluptas. Reiciendis voluptatem consequuntur dolor doloremque ipsa ratione sunt odio laudantium.</p>
+                <!-- navigation content -->
+                <nav>
+                    <span>IN EVIDENZA</span>
+                    <span>PODCAST</span>
+                    <span>CLASSIFICHE</span>
+                    <span>GENERI E MOOD</span>
+                    <span>NUOVE USCITE</span>
+                    <span>SCOPRI</span>
+                </nav>
+                <!-- /navigation content -->
+
+                <!-- section recently played -->
+                <div class="recently">
+                    <h1>Recently played</h1>
+                    <div class="row">
+                        <div class="card">
+                            <img src="img/metal_lifting.jpg" alt="album-picture">
+                            <h4>Heavy Metal</h4>
+                            <span>subitle</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/stranger.jpeg" alt="album-picture">
+                            <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                            <span>Kyle Dixson & Michael Stein</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/aquietplace.jpeg" alt="album-picture">
+                            <h4>A quiet Place</h4>
+                            <span>subitle</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/split.jpeg" alt="album-picture">
+                            <h4>Split</h4>
+                            <span>subitle</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/cure.jpeg" alt="album-picture">
+                            <h4>A cure for wellness</h4>
+                            <span>subitle</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/sinister.jpeg" alt="album-picture">
+                            <h4>Sinister</h4>
+                            <span>subitle</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /section recently played -->
+
+                <!-- section created -->
+                <div class="created">
+                    <h1>Creato per John Doe</h1>
+                    <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+                    <div class="row">
+                        <div class="card">
+                            <img src="img/radar.jpeg" alt="album-picture">
+                            <h4>Release Radar</h4>
+                        </div>
+                        <div class="card">
+                            <img src="img/mixdaily.jpeg" alt="album-picture">
+                            <h4>Daily Mix 1</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- /section created -->
+
+                <!-- section popular artist -->
+                <div class="created popular">
+                    <h1>Artisti più popolari</h1>
+                    <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+                    <div class="row">
+                        <div class="card">
+                            <img src="img/youg.jpeg" alt="album-picture">
+                            <h4>Lana del Rey</h4>
+                        </div>
+                        <div class="card">
+                            <img src="img/einaudi.jpeg" alt="album-picture">
+                            <h4>Ludovico Einaudi</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- /section popular artist -->
             </section>
             <!-- /main content -->
         </main>
@@ -71,9 +158,35 @@
 
         <!-- second macro area -->
         <section id="bottom-navigation">
-            <div class="nav"></div>
-            <div class="nav"></div>
-            <div class="nav"></div>
+            <div class="navigator">
+                <div class="card">
+                    <img src="" alt="">
+                    <h6></h6>
+                    <span></span>
+                    <i></i>
+                    <i></i>
+                </div>
+                <div class="card">
+                    <div class="tools">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <div class="time-bar">
+                        <span></span>
+                        <hr></hr>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <hr>
+                </div>
+            </div>
         </section>
         <!-- /second macro area -->
     </section>
