@@ -11,6 +11,7 @@
     }
     aside {
         width: 70px;
+        height: 91vh;
         text-align: center;
     }
     aside .logo img.large {

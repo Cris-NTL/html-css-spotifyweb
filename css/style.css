@@ -27,6 +27,7 @@ img {
 /* common rules */
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--content);
 }
 #content {
     padding: 1rem 0 10rem 1rem;
@@ -50,7 +51,7 @@ body {
 /* left sidebar */
 aside {
     width: 230px;
-    height: 91vh;
+    height: 93vh;
     padding: 1rem 1rem;
     position: fixed;
     background-color: var(--sidebar);
@@ -153,7 +154,7 @@ header {
     position: fixed;
     left: 229px;
     background-color: var(--header);
-    opacity: 90%;
+    opacity: 80%;
     z-index: 1;
     display: flex;
     flex-direction: row-reverse;
@@ -165,6 +166,7 @@ header a {
     padding: 0.8rem 2rem;    
     border-radius: 25px 25px;
     display: inline-block;
+    text-decoration: none;
 }
 /* hover */
 header a:hover {
@@ -297,6 +299,10 @@ header a:hover {
 /* hover */
 #bottom-navigation .tools i:nth-child(3):hover {
     font-size: 2.1rem;
+}
+#bottom-navigation .progress-current:hover {
+    background-color: var(--green)
+
 }
 /* /hover */
 #bottom-navigation img {
