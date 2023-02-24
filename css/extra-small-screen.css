@@ -3,6 +3,12 @@
     #bottom-navigation {
         height: 100px;
     }
+    #bottom-navigation .card {
+        gap: 0.5rem;
+    }
+    #bottom-navigation .navigator:first-child {
+        margin-right: 1.5rem;
+    }
     aside {
         width: 70px;
         text-align: center;

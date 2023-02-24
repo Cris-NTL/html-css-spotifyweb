@@ -3,6 +3,13 @@
     #bottom-navigation {
         height: 100px;
     }
+    #bottom-navigation .navigator {
+        gap: 0;
+    }
+    #bottom-navigation .card {
+        width: calc(80% / 3);
+        gap: 1rem;
+    }
     #content nav * {
         width: calc(100% / 3 - 1rem);
     }
