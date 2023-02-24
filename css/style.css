@@ -217,8 +217,8 @@ header a:hover {
     display: none;
 }
 /* hover */
-#content .card img:hover {
-    opacity: 0.5;
+#content .card .play-hover:hover {
+    opacity: 50%;
     cursor: pointer;
 }
 /* /hover */
@@ -250,9 +250,20 @@ header a:hover {
     gap: 2rem;
     color: var(--nav-cont);
 }
+/* hover */
+#bottom-navigation .card span:hover {
+    text-decoration: underline;
+    color: var(--default);
+    cursor: pointer;
+}
+#bottom-navigation .card i:hover {
+    cursor: pointer;
+    color: var(--default);
+}
+/* /hover */
 #bottom-navigation .central {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
     color: var(--default);
 }
 #bottom-navigation .time-bar {
@@ -264,7 +275,11 @@ header a:hover {
 #bottom-navigation .tools {
     display: flex;
     gap: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    align-items: center;
+}
+#bottom-navigation .tools i:nth-child(3) {
+    font-size: 1.8rem;
 }
 #bottom-navigation .progress-bar {
     height: 8px;
@@ -279,6 +294,11 @@ header a:hover {
     background-color: #4a5363;
     border-radius: 10px;
 }
+/* hover */
+#bottom-navigation .tools i:nth-child(3):hover {
+    font-size: 2.1rem;
+}
+/* /hover */
 #bottom-navigation img {
     height: 100%;
 }
