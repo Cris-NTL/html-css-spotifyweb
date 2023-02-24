@@ -38,6 +38,11 @@
     aside .user hr {
         display: none;
     }
+    aside .user li:nth-child(2) i {
+        background-color:var(--sidebar);
+        color: var(--side-text);
+        font-size: 1.5rem;
+    }
     header {
         width: calc(100% - 70px);
         left: 69px;
@@ -46,7 +51,7 @@
         width: calc(100% - 70px);
         left: 69px;
     }
-    #content nav * {
+    #content nav ul * {
         width: calc(100% / 4 - 1rem);
     }
 }

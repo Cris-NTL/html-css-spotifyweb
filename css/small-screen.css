@@ -10,7 +10,7 @@
         width: calc(80% / 3);
         gap: 1rem;
     }
-    #content nav * {
+    #content nav ul * {
         width: calc(100% / 3 - 1rem);
     }
     #content .card {

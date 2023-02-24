@@ -3,11 +3,11 @@
     #bottom-navigation {
         height: 80px;
     }
-    #content nav {
+    #content nav ul {
         flex-wrap: wrap;
         gap: 1rem;    
     }
-    #content nav * {
+    #content nav ul * {
         width: calc(100% / 5 - 1rem);
     }
     #content .row {
