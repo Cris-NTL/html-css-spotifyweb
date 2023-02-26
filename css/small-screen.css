@@ -1,5 +1,8 @@
 /* <= 700px */
 @media screen and (max-width: 700px) {
+    aside .user {
+        margin-bottom: 1rem;
+    }
     #bottom-navigation {
         height: 100px;
     }
